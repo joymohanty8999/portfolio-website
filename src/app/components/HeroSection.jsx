@@ -4,6 +4,12 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
+
+    const handleDownloadClick = () => {
+        const resumeURL = "files/Joseph%20Mohanty.pdf";
+        window.location.href = resumeURL;
+    }
+
     return (
         <section className="hero-section">
             <div className="grid grid-cols-1 sm:grid-cols-12 items-center lg:gap-8 gap-4">
@@ -31,7 +37,7 @@ const HeroSection = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                        <button className="px-6 py-3 w-full sm:w-auto rounded-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white">
+                        <button onClick={handleDownloadClick} className="px-6 py-3 w-full sm:w-auto rounded-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white">
                             Download CV
                         </button>
                     </div>
