@@ -10,7 +10,7 @@ const HeroSection = () => {
                 <div className="col-span-1 sm:col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white mb-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500">
-                            Hello, I'm
+                            Hello, I&apos;m
                         </span>
                         <br />
                         <span className="block sm:inline-block" style={{ minHeight: '1.5em' }}>
