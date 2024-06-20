@@ -23,7 +23,8 @@ const HeroSection = () => {
                             <TypeAnimation
                                 sequence={['Joseph Mohanty', 2000, 
                                     'a Software Developer', 1500, 
-                                    'a Machine Learning Engineer', 1500,
+                                    'a ML Engineer', 1500,
+                                    'a Data Engineer',1500,
                                 ]}
                                 repeat={Infinity}
                                 deletionSpeed={90}
