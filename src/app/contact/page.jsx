@@ -36,11 +36,11 @@ export default function Contact() {
                     </h5>
 
                     <p className="text-[#ADB7BE] mb-4">
-                        I am currently looking for full-time roles and Fall Co-op internships. Whether you’re interested in my projects, have a question about my experience, or just want to say hi, my inbox is always open. Feel free to reach out to me via email or follow me on my social profiles.
+                        I am currently looking for full-time roles and Fall Co-op internships. Whether you&apos;re interested in my projects, have a question about my experience, or just want to say hi, my inbox is always open. Feel free to reach out to me via email or follow me on my social profiles.
                     </p>
 
                     <p className="text-[#ADB7BE] mb-4">
-                        I'm excited to connect with fellow professionals and explore opportunities where I can apply my skills in software development and machine learning. Let’s collaborate and create innovative solutions that make a difference. Don’t hesitate to get in touch!
+                        I&apos;m excited to connect with fellow professionals and explore opportunities where I can apply my skills in software development and machine learning. Let&apos;s collaborate and create innovative solutions that make a difference. Don&apos;t hesitate to get in touch!
                     </p>
 
                     <div className="socials flex flex-row gap-4">
