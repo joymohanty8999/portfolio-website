@@ -17,7 +17,8 @@
     "react-dom": "^18",
     "react-lottie-player": "^2.0.0",
     "react-type-animation": "^3.2.0",
-    "resend": "^3.3.0"
+    "resend": "^3.3.0",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "eslint": "^8.57.0",

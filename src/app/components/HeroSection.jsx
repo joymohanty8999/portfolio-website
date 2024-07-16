@@ -1,14 +1,39 @@
 "use client";
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
+import Typewriter from 'typewriter-effect/dist/core';
 
 const HeroSection = () => {
+
+    const typewriterRef = useRef(null);
 
     const handleDownloadClick = () => {
         const resumeURL = "files/Joseph%20Mohanty.pdf";
         window.location.href = resumeURL;
     }
+
+    useEffect(() => {
+        const typewriter = new Typewriter(typewriterRef.current, {
+            loop: true,
+            delay: 75,
+            deleteSpeed: 50,
+        });
+
+        typewriter
+            .typeString('Joseph Mohanty')
+            .pauseFor(3000)
+            .deleteAll()
+            .typeString('a Software Developer')
+            .pauseFor(3000)
+            .deleteAll()
+            .typeString('a ML Engineer')
+            .pauseFor(3000)
+            .deleteAll()
+            .typeString('a Data Engineer')
+            .pauseFor(3000)
+            .deleteAll()
+            .start();
+    }, []);
 
     return (
         <section className="hero-section">
@@ -20,16 +45,9 @@ const HeroSection = () => {
                         </span>
                         <br />
                         <span className="block sm:inline-block" style={{ minHeight: '1.5em' }}>
-                            <TypeAnimation
-                                sequence={['Joseph Mohanty', 2000, 
-                                    'a Software Developer', 1500, 
-                                    'a ML Engineer', 1500,
-                                    'a Data Engineer',1500,
-                                ]}
-                                repeat={Infinity}
-                                deletionSpeed={90}
-                                className="inline-block"
-                            />
+
+                            <span ref={typewriterRef} className="inline-block"></span>
+
                         </span>
                     </h1>
 
