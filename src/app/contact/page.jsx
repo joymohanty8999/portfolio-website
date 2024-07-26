@@ -43,7 +43,7 @@ export default function Contact() {
                         I&apos;m excited to connect with fellow professionals and explore opportunities where I can apply my skills in software development and machine learning. Let&apos;s collaborate and create innovative solutions that make a difference. Don&apos;t hesitate to get in touch!
                     </p>
 
-                    <div className="socials flex flex-row gap-4">
+                    <div className="socials flex flex-row gap-4 relative z-10">
                         <a href="https://github.com/joymohanty8999" target="_blank" rel="noopener noreferrer">
                             <Image src={GithubIcon} alt="Github Icon" className="w-12 h-12" />
                         </a>
@@ -58,7 +58,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="flex-1 flex justify-center md:justify-start items-center">
+                <div className="flex-1 flex justify-center md:justify-start items-center relative z-0">
                     <LottiePlayer
                         loop
                         animationData={animationData}
