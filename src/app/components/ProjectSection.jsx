@@ -17,7 +17,7 @@ const projectsData = [
         id: 2,
         title: "Brain Tumor Detection",
         description: "Developed a custom CNN model to detect brain tumors with a test accuracy of 95%, enhanced by implementing GRAD-CAM for heatmap visualizations to highlight tumor regions.",
-        image: "/images/project/brain-tumor-detection.jpeg",
+        image: "/images/project/brain-tumor-detection.png",
         tag: ["All","ML"],
         githubUrl: "https://github.com/joymohanty8999/statistical-ml-project"
     },
