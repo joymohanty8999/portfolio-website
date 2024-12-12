@@ -26,7 +26,7 @@ const projectsData = [
         id: 3,
         title: "Image Colorization using user-guided Hints",
         description: "Implemented an AutoEncoder to colorize grayscale images, also added user-guided color priors for users to generate a variety of colorized images.",
-        image: "/images/project/image-colorization.png",
+        image: "/images/project/gray_color_mayon.png",
         tag: ["All","ML"],
         githubUrl: "https://github.com/joymohanty8999/image-colorisation-using-color-priors"
     },
