@@ -40,6 +40,15 @@ const projectsData = [
         githubUrl: "https://github.com/joymohanty8999/sentiment-analysis"
     },
 
+    {
+        id: 5,
+        title: "Intelligent Query Optimization",
+        description: "This project explores Dynamic Bloom Filters (DBFs) and the fine-tuning of SentenceTransformer models for optimizing semantic search in large-scale document retrieval systems. It focuses on improving scalability, precision, memory efficiency, and query performance in dynamic and real-time workloads.",
+        image: "/images/project/Query-Optimization.png",
+        tag: ["All","ML","Web"],
+        githubUrl: "https://github.com/joymohanty8999/intelligent-query-optimization"
+    }
+
 ]
 
 const ProjectSection = () => {
