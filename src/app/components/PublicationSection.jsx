@@ -21,7 +21,7 @@ const PublicationSection = () => {
     return (
         <section id="publications" className="py-10">
             <div className="container mx-auto px-5">
-                <h2 className="text-4xl font-bold text-white mb-8">
+                <h2 className="text-3xl font-bold text-white mb-8">
                     PUBLICATIONS
                 </h2>
                 {PublicationData.map((publication) => (
