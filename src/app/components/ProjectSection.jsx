@@ -33,7 +33,7 @@ const projectsData = [
 
     {
         id: 4,
-        title: "Sentiment Analysis on Complaints on a Student Grievance Portal",
+        title: "Sentiment Analysis of Complaints on a Student Grievance Portal",
         description: "Engineered a sentiment analysis model using LSTMs to prioritize student grievances, achieving an 87% test accuracy and significantly improving response times to critical issues.",
         image: "/images/project/sentiment-analysis-bilstms.jpg",
         tag: ["All","ML"],
