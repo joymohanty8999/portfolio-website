@@ -7,10 +7,7 @@ const HeroSection = () => {
 
     const typewriterRef = useRef(null);
 
-    const handleDownloadClick = () => {
-        const resumeURL = "files/Resume/Joseph%20Mohanty.pdf";
-        window.location.href = resumeURL;
-    }
+    const resumeURL = "files/Resume/Joseph%20Mohanty.pdf";
 
     useEffect(() => {
         const typewriter = new Typewriter(typewriterRef.current, {
@@ -56,9 +53,15 @@ const HeroSection = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                        <button onClick={handleDownloadClick} className="px-6 py-3 w-full sm:w-auto rounded-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white">
+                        {/* Use an anchor tag to download the resume */}
+                        <a
+                            href={resumeURL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-3 w-full sm:w-auto rounded-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white text-center"
+                        >
                             Download CV
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div className="col-span-1 sm:col-span-5 flex justify-center mt-6 sm:mt-0">

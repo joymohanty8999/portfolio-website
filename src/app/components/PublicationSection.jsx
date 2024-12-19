@@ -60,8 +60,8 @@ const PublicationSection = () => {
                         <p className="text-blue-400 hover:underline mt-4">
                             <a
                                 href={publication.pdf}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                target="_blank" // Opens in a new tab
+                                rel="noopener noreferrer" // Prevents security vulnerabilities
                             >
                                 Download PDF
                             </a>
