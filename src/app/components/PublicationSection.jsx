@@ -57,7 +57,7 @@ const PublicationSection = () => {
                             <span className="font-semibold">Abstract: </span>
                             {publication.abstract}
                         </p>
-                        <p className="text-blue-400 hover:underline mt-4">
+                        <p className="text-blue-400 hover:underline mt-4 text-justify">
                             <a
                                 href={publication.pdf}
                                 target="_blank" // Opens in a new tab
