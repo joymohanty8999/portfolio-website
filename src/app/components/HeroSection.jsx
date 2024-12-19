@@ -8,7 +8,7 @@ const HeroSection = () => {
     const typewriterRef = useRef(null);
 
     const handleDownloadClick = () => {
-        const resumeURL = "files/Joseph%20Mohanty.pdf";
+        const resumeURL = "files/Resume/Joseph%20Mohanty.pdf";
         window.location.href = resumeURL;
     }
 
