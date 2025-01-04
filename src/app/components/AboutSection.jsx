@@ -31,7 +31,7 @@ const AboutSection = () => {
                     <br />
 
                     <p className="text-base lg:text-lg">
-                        Prior to joining Rice, I worked as Tech Engineer at <a href="https://www.ubs.com/us/en.html" target="_blank" className="text-blue-500 hover:text-blue-700">UBS</a> in their Investment Banking Division, where I was part of the CAIP (Corporate Actions and Income Processing) Team. I primarily contributed to leading code release activities for our application suite.
+                        Prior to joining Rice, I worked as a Software Engineer at <a href="https://www.ubs.com/us/en.html" target="_blank" className="text-blue-500 hover:text-blue-700">UBS</a> in their Investment Banking Division, where I was part of the CAIP (Corporate Actions and Income Processing) Team. I primarily contributed to leading code release activities for our application suite.
                     </p>
 
                 </div>
