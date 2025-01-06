@@ -1,7 +1,7 @@
 "use client";
+
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const experiences = [
   {
@@ -55,22 +55,27 @@ const experiences = [
 
 export default function ExperiencePage() {
   const sectionsRef = useRef([]);
-  const [visibleSections, setVisibleSections] = useState([]);
+  const [visibleSections, setVisibleSections] = useState(
+    Array(experiences.length).fill(true) // Mark all as visible by default
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
-            setTimeout(() => {
-              setVisibleSections((prev) => [...new Set([...prev, index])]);
-            }, index * 200); // Delay of 200ms for staggered animation
+            setVisibleSections((prev) => {
+              const updated = [...prev];
+              updated[index] = true;
+              return updated;
+            });
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
+    sectionsRef.current = sectionsRef.current.slice(0, experiences.length);
     sectionsRef.current.forEach((section) => {
       if (section) observer.observe(section);
     });
@@ -84,32 +89,25 @@ export default function ExperiencePage() {
 
   return (
     <section className="min-h-screen py-12 px-6 lg:px-24 bg-gray-900 text-white relative">
-      {/* Floating Button for Back to Home */}
-      <Link
-        href="/"
-        className="fixed bottom-6 left-6 bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 z-50"
-      >
-        Back to Home
-      </Link>
+      <div className="absolute top-6 left-6">
+        <a href="/" className="text-blue-500 hover:text-blue-700 font-semibold">
+          ← Back to Home
+        </a>
+      </div>
 
-      {/* Header Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold uppercase">Experience</h1>
       </div>
 
-      {/* Experience Sections */}
-      <div className="space-y-16 max-w-5xl mx-auto">
+      <div className="space-y-16">
         {experiences.map((exp, index) => (
           <div
             key={index}
             ref={(el) => (sectionsRef.current[index] = el)}
-            className={`flex flex-col lg:flex-row items-center lg:items-start transition-transform duration-700 ease-in-out ${
-              visibleSections.includes(index)
-                ? "translate-y-0 opacity-100"
-                : "translate-y-12 opacity-0"
+            className={`flex flex-col lg:flex-row items-center lg:items-start min-h-section transition-transform duration-700 ease-in-out ${
+              visibleSections[index] ? "translate-y-0 opacity-100" : "opacity-0"
             }`}
           >
-            {/* Logo Section */}
             <div className="lg:w-1/3 flex justify-center items-center p-6">
               <Image
                 src={exp.logo}
@@ -119,7 +117,6 @@ export default function ExperiencePage() {
                 className="rounded-lg shadow-lg"
               />
             </div>
-            {/* Details Section */}
             <div className="lg:w-2/3 px-8">
               <h2 className="text-2xl font-bold mb-2">{exp.title}</h2>
               <h3 className="text-xl text-blue-400 mb-1">{exp.company}</h3>
