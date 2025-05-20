@@ -4,6 +4,20 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const experiences = [
+
+  {
+    title: "Software Developer",
+    company: "Script Care, Ltd.",
+    location: "Austin, TX, USA",
+    duration: "March 2025 – Present",
+    logo: "/logos/Script-Care-Logo-Square.png",
+    details: [
+      "Built a GoLang API for automatic Tredium Web Service token password resets, including password generation, credential database updates, and Redis token cache refresh.",
+      "Automated password resets for 100+ Tredium web service accounts across production and test environments.",
+      "Minimized network latency and API calls, achieving 30% faster token retrieval with Redis token caching.",
+    ],
+  },
+
   {
     title: "Software Development Intern",
     company: "Rice University",
@@ -112,9 +126,9 @@ export default function ExperiencePage() {
               <Image
                 src={exp.logo}
                 alt={`${exp.company} logo`}
-                width={150}
-                height={150}
-                className="rounded-lg shadow-lg"
+                width={300}
+                height={300}
+                className="object-contain rounded-lg shadow-lg"
               />
             </div>
             <div className="lg:w-2/3 px-8">

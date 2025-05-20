@@ -19,13 +19,19 @@ const AboutSection = () => {
                     <br />
 
                     <p className="text-base lg:text-lg">
-                        My name is Joseph Anurag Mohanty. I am currently pursuing my Masters in Computer Science at <a href="https://www.rice.edu" target="_blank" className="text-blue-500 hover:text-blue-700">Rice University</a>, with a Bachelor’s degree in Computer Science Engineering from <a href="https://www.manipal.edu/mit.html" target="_blank" className="text-blue-500 hover:text-blue-700">Manipal Institute of Technology</a>. I am specializing in the field of Data Science and Machine Learning. With a strong foundation in software development and a keen interest in emerging technologies, I have continually sought out opportunities to apply my skills to real-world challenges.
+                        My name is Joseph Anurag Mohanty. I graduated with my Master's in Computer Science at <a href="https://www.rice.edu" target="_blank" className="text-blue-500 hover:text-blue-700">Rice University</a>, with a Bachelor’s degree in Computer Science Engineering from <a href="https://www.manipal.edu/mit.html" target="_blank" className="text-blue-500 hover:text-blue-700">Manipal Institute of Technology</a>. I am specializing in the field of Data Science and Machine Learning. With a strong foundation in software development and a keen interest in emerging technologies, I have continually sought out opportunities to apply my skills to real-world challenges.
                     </p>
 
                     <br />
 
                     <p className="text-base lg:text-lg">
-                        Currently, I am working as a Research Assistant under <a href="https://www.cs.rice.edu/~cmj4/" target="_blank" className="text-blue-500 hover:text-blue-700">Professor Chris Jermaine</a>. We are working on a Machine Learning system - Einsummable - that automatically distributes ML compute graphs across clusters of CPU or GPU machines. It is based on the idea that tensors are relations mapping positions to values and all operations are therefore relational. The benefit of treating ML compute graphs as relational queries is that they can be easily reasoned and optimized over.
+                        I am currently working as a Software Developer at Script Care, Ltd., where I focus on backend automation and system efficiency. I built a GoLang-based API to automate token password resets for over 100 Tredium Web Service accounts, incorporating password generation, credential management, and Redis token cache refresh. This automation led to a 30% improvement in token retrieval speed and significantly reduced manual intervention. 
+                    </p>
+
+                    <br />
+
+                    <p className="text-base lg:text-lg">
+                        I worked as a Research Assistant under <a href="https://www.cs.rice.edu/~cmj4/" target="_blank" className="text-blue-500 hover:text-blue-700">Professor Chris Jermaine</a>. We worked on a Machine Learning system - Einsummable - that automatically distributes ML compute graphs across clusters of CPU or GPU machines. It is based on the idea that tensors are relations mapping positions to values and all operations are therefore relational. The benefit of treating ML compute graphs as relational queries is that they can be easily reasoned and optimized over.
                     </p>
 
                     <br />
