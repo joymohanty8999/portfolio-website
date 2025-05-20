@@ -19,7 +19,7 @@ const AboutSection = () => {
                     <br />
 
                     <p className="text-base lg:text-lg">
-                        My name is Joseph Anurag Mohanty. I graduated with my Master's in Computer Science at <a href="https://www.rice.edu" target="_blank" className="text-blue-500 hover:text-blue-700">Rice University</a>, with a Bachelor’s degree in Computer Science Engineering from <a href="https://www.manipal.edu/mit.html" target="_blank" className="text-blue-500 hover:text-blue-700">Manipal Institute of Technology</a>. I am specializing in the field of Data Science and Machine Learning. With a strong foundation in software development and a keen interest in emerging technologies, I have continually sought out opportunities to apply my skills to real-world challenges.
+                        My name is Joseph Anurag Mohanty. I graduated with my Master's in Computer Science at <a href="https://www.rice.edu" target="_blank" className="text-blue-500 hover:text-blue-700">Rice University</a>, with a Bachelor&apos;s degree in Computer Science Engineering from <a href="https://www.manipal.edu/mit.html" target="_blank" className="text-blue-500 hover:text-blue-700">Manipal Institute of Technology</a>. I am specializing in the field of Data Science and Machine Learning. With a strong foundation in software development and a keen interest in emerging technologies, I have continually sought out opportunities to apply my skills to real-world challenges.
                     </p>
 
                     <br />
