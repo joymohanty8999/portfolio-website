@@ -12,9 +12,8 @@ const experiences = [
     duration: "March 2025 – Present",
     logo: "/logos/Script-Care-Logo-Square.png",
     details: [
-      "Built a GoLang API for automatic Tredium Web Service token password resets, including password generation, credential database updates, and Redis token cache refresh.",
-      "Automated password resets for 100+ Tredium web service accounts across production and test environments.",
-      "Minimized network latency and API calls, achieving 30% faster token retrieval with Redis token caching.",
+      "Built GoLang APIs to automate password resets for Tredium, a pharmacy claims and management platform, implementing distributed locking to prevent race conditions, with secure password generation, and Redis token caching — reducing token retrieval time.",
+      "Developed features and resolved production issues for EmpiRx Health’s pharmacy benefits platform, managing incoming tickets and implementing enhancements to meet client requirements, consistently resolving high-priority issues within SLA and reducing average resolution time by 15%.",
     ],
   },
 
