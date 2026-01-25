@@ -23,12 +23,6 @@ const HeroSection = () => {
             .typeString('a Software Developer')
             .pauseFor(3000)
             .deleteAll()
-            .typeString('a ML Engineer')
-            .pauseFor(3000)
-            .deleteAll()
-            .typeString('a Data Engineer')
-            .pauseFor(3000)
-            .deleteAll()
             .start();
     }, []);
 
@@ -49,7 +43,7 @@ const HeroSection = () => {
                     </h1>
 
                     <p className="text-[#ADB7BE] text-lg lg:text-xl mb-4">
-                        An enthusiastic Computer Science student, looking for opportunities in the field of Software Development, Data Science and Machine Learning.
+                        An enthusiastic Computer Science student, looking for opportunities in the field of Software Development and Machine Learning.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
