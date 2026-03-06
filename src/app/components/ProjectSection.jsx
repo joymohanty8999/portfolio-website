@@ -13,17 +13,9 @@ const projectsData = [
         githubUrl: "https://github.com/joymohanty8999/url-shortener"
     },
 
-    {
-        id: 2,
-        title: "Brain Tumor Detection",
-        description: "Developed a custom CNN model to detect brain tumors with a test accuracy of 95%, enhanced by implementing GRAD-CAM for heatmap visualizations to highlight tumor regions.",
-        image: "/images/project/brain-tumor-detection.png",
-        tag: ["All","ML"],
-        githubUrl: "https://github.com/joymohanty8999/statistical-ml-project"
-    },
 
     {
-        id: 3,
+        id: 2,
         title: "Image Colorization using user-guided Hints",
         description: "Implemented an AutoEncoder to colorize grayscale images, also added user-guided color priors for users to generate a variety of colorized images.",
         image: "/images/project/gray_color_mayon.png",
@@ -32,7 +24,7 @@ const projectsData = [
     },
 
     {
-        id: 4,
+        id: 3,
         title: "Sentiment Analysis of Complaints on a Student Grievance Portal",
         description: "Engineered a sentiment analysis model using LSTMs to prioritize student grievances, achieving an 87% test accuracy and significantly improving response times to critical issues.",
         image: "/images/project/sentiment-analysis-bilstms.jpg",
@@ -41,12 +33,21 @@ const projectsData = [
     },
 
     {
-        id: 5,
+        id: 4,
         title: "Intelligent Query Optimization",
         description: "This project explores Dynamic Bloom Filters (DBFs) and the fine-tuning of SentenceTransformer models for optimizing semantic search in large-scale document retrieval systems. It focuses on improving scalability, precision, memory efficiency, and query performance in dynamic and real-time workloads.",
         image: "/images/project/Query-Optimization.png",
         tag: ["All","ML","Web"],
         githubUrl: "https://github.com/joymohanty8999/intelligent-query-optimization"
+    },
+
+    {
+        id: 5,
+        title: "Rate Limiter",
+        description: "A rate limiting service built in Go using Token Bucket Algorithm. Features atomic Redis operations via Lua Scripts, dual rate limiting per IP and per candidate, fail-open Redis integration and YAML-based config.",
+        image: "/images/project/rate-limiter.png",
+        tag: ["All","Backend"],
+        githubUrl: "https://github.com/joymohanty8999/rate-limiter"
     }
 
 ]
